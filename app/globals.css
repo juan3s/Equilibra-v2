@@ -8,50 +8,50 @@
 /* Mapeados desde el tailwind.config.js original + compatibles con shadcn/ui  */
 
 :root {
-  /* Surfaces */        /* Slate 50 — bg original */        /* Slate 800 — text original */
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  /* ── Surfaces ── */
+  --background: oklch(0.984 0.003 247.858);    /* #f8fafc Slate 50 */
+  --foreground: oklch(0.279 0.041 261.325);    /* #1e293b Slate 800 */
+  --card: oklch(1 0 0);                        /* #ffffff */
+  --card-foreground: oklch(0.279 0.041 261.325);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.279 0.041 261.325);
 
-  /* Brand */
-  --primary: oklch(0.205 0 0);           /* Royal Blue — primary original */
-  --primary-foreground: oklch(0.985 0 0);
+  /* ── Brand ── */
+  --primary: oklch(0.546 0.245 262.881);       /* #2563eb Royal Blue */
+  --primary-foreground: oklch(1 0 0);
 
-  /* Semánticos */
-  --secondary: oklch(0.97 0 0);         /* Slate 100 */
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);  /* Slate 500 — muted original */
-  --accent: oklch(0.97 0 0);            /* Emerald 500 — accent original */
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: #ffffff;
+  /* ── Semánticos ── */
+  --secondary: oklch(0.968 0.007 247.896);     /* #f1f5f9 Slate 100 */
+  --secondary-foreground: oklch(0.279 0.041 261.325);
+  --muted: oklch(0.968 0.007 247.896);
+  --muted-foreground: oklch(0.554 0.046 257.417); /* #64748b Slate 500 */
+  --accent: oklch(0.696 0.17 162.48);          /* #10b981 Emerald 500 */
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);    /* #ef4444 */
+  --destructive-foreground: oklch(1 0 0);
 
-  /* Estructura */
-  --border: oklch(0.922 0 0);            /* Slate 200 */
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  /* ── Estructura ── */
+  --border: oklch(0.929 0.013 255.508);        /* #e2e8f0 Slate 200 */
+  --input: oklch(0.929 0.013 255.508);
+  --ring: oklch(0.546 0.245 262.881);
 
-  /* Charts (para Recharts) */
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
+  /* ── Charts ── */
+  --chart-1: oklch(0.546 0.245 262.881);       /* Royal Blue */
+  --chart-2: oklch(0.696 0.17 162.48);         /* Emerald */
+  --chart-3: oklch(0.769 0.188 70.08);         /* Amber */
+  --chart-4: oklch(0.577 0.245 27.325);        /* Red */
+  --chart-5: oklch(0.606 0.218 277.117);       /* Violet */
 
-  /* Radius base (shadcn/ui) */
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* ── Radius & Sidebar ── */
+  --radius: 0.5rem;
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.279 0.041 261.325);
+  --sidebar-primary: oklch(0.546 0.245 262.881);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.968 0.007 247.896);
+  --sidebar-accent-foreground: oklch(0.279 0.041 261.325);
+  --sidebar-border: oklch(0.929 0.013 255.508);
+  --sidebar-ring: oklch(0.546 0.245 262.881);
 }
 
 /* ─── Tailwind v4 Theme Registration ─────────────────────────────────────── */
