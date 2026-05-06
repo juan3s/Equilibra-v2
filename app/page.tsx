@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Equilibra — Finanzas personales, sin fricción",
@@ -177,6 +178,22 @@ export default function LandingPage() {
           © 2025 Equilibra — Diseñado por Digital Workflows®
         </div>
       </footer>
+
+      <Script id="chatwoot-widget" strategy="afterInteractive">
+        {`(function(d,t) {
+          var BASE_URL="https://instancia-n8n-chatwoot.xxhqsu.easypanel.host";
+          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=BASE_URL+"/packs/js/sdk.js";
+          g.async = true;
+          s.parentNode.insertBefore(g,s);
+          g.onload=function(){
+            window.chatwootSDK.run({
+              websiteToken: 'hNikf8s4J6L9vZwp6FcCfSHt',
+              baseUrl: BASE_URL
+            })
+          }
+        })(document,"script");`}
+      </Script>
     </div>
   );
 }
