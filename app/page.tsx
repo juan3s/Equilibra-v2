@@ -180,15 +180,16 @@ export default function LandingPage() {
       </footer>
 
       <Script id="chatwoot-widget" strategy="afterInteractive">
-        {`(function(d,t) {
-          var BASE_URL="https://instancia-n8n-chatwoot.xxhqsu.easypanel.host";
+        {`window.chatwootSettings = {"position":"left","type":"expanded_bubble","launcherTitle":"Chat"};
+        (function(d,t) {
+          var BASE_URL="https://automatization-prod-chatwoot.xxhqsu.easypanel.host";
           var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
           g.src=BASE_URL+"/packs/js/sdk.js";
           g.async = true;
           s.parentNode.insertBefore(g,s);
           g.onload=function(){
             window.chatwootSDK.run({
-              websiteToken: 'hNikf8s4J6L9vZwp6FcCfSHt',
+              websiteToken: 'RoMLiHMjWag7kpuV7kaoAt8g',
               baseUrl: BASE_URL
             })
           }
